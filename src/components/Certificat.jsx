@@ -29,7 +29,7 @@ export default function Certificat() {
         </div>
         <br/>
         <div className='project-school card-subtitle h6' style={{textAlign:"left"}}>
-        IBM
+        The Hong Kong University
         
         </div>
         <div className='project-school card-subtitle h6' style={{textAlign:"left"}}>
@@ -49,7 +49,8 @@ export default function Certificat() {
         <br/>
         <div className='project-school card-subtitle h6' style={{textAlign:"left"}}>
         <br/>
-        IBM
+        The Hong Kong University
+
 
         </div>
         <div className='project-school card-subtitle h6' style={{textAlign:"left"}}>
@@ -69,7 +70,8 @@ date de délivrance : janvier 2023
         <br/>
         <div className='project-school card-subtitle h6' style={{textAlign:"left"}}>
           
-        IBM
+        The Hong Kong University
+
 
         </div>
         <div className='project-school card-subtitle h6' style={{textAlign:"left"}}>
