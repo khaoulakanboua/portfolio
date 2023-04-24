@@ -1,14 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Carousel from "react-elastic-carousel";
-import "./style.css";
 import { Card } from 'primereact/card';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-const breakPoints = [
-    { width: 400, itemsToShow: 1 },
-    { width: 800, itemsToShow: 2 },
-    { width: 1080, itemsToShow: 3 },
-  ];
+
 const devops = (
     <img alt="Card" src={require('../images/pokemon.png')} style={{height:250}} />
 );
@@ -22,9 +17,11 @@ export default function Projet() {
     
   return (
       
-      <div className="App" style={{marginTop:40}}>
-        <Carousel breakPoints={breakPoints} className='project-container rows'>
-        <div className='project-card col-12 col-md-10 mb-4'>
+    <div className='container mt-4'>
+
+    <section className='section'>
+      <div className='project-container row'>
+        <div className='project-card col-12 col-md-4 mb-4'>
         <Card header={devops} className="card" >
         <div className='project-title card-title h5' style={{textAlign:"left"}}>
         Application Mobile 'Pokemon'
@@ -38,7 +35,7 @@ export default function Projet() {
         
       </Card>
       </div>
-      <div className='project-card col-12 col-md-10 mb-4'>
+      <div className='project-card col-12 col-md-4 mb-4'>
         <Card header={agence} className="card" >
         <div className='project-title card-title h5' style={{textAlign:"left"}}>
         Site web pour la gestion des rendez-vous
@@ -52,7 +49,7 @@ export default function Projet() {
         
       </Card>
       </div>
-      <div className='project-card col-12 col-md-10 mb-4'>
+      <div className='project-card col-12 col-md-4 mb-4'>
         <Card header={morpion} className="card" >
         <div className='project-title card-title h5' style={{textAlign:"left"}}>
         Jeux Morpion avec React
@@ -67,30 +64,10 @@ export default function Projet() {
         
       </Card>
       </div>
-      <div className='project-card col-12 col-md-10 mb-4'>
-        <Card header={devops} className="card" >
-        <div className='project-title card-title h5' style={{textAlign:"left"}}>
-        Front-End Web UI Frameworks ans Tools:
-        Bootstrap 4
-        </div>
-        <br/>
-        <div className='project-school card-subtitle h6' style={{textAlign:"left"}}>
-        IBM
-        
-        </div>
-        <div className='project-school card-subtitle h6' style={{textAlign:"left"}}>
-        <br/>
-        date de délivrance : Décember 2022
      
-        </div>
-        
-      </Card>
       </div>
-        </Carousel>
+      </section>
       </div>
     
   );
 }
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<Projet />, rootElement);
