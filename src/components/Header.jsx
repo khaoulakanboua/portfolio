@@ -10,7 +10,7 @@ export default function BasicDemo() {
     const navigate = useNavigate();
 
     const items = [
-        {label: 'Acceuil',command: () => {navigate('/Acceuil') }},
+        {label: 'Acceuil',command: () => {navigate('/') }},
         {label: 'Formations',command: () => {navigate('/Formation') }},
         {label: 'Experiences',command: () => {navigate('/Experience ') }},
         {label: 'Projets',command: () => {navigate('/Projet ') }},
