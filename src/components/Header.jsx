@@ -4,6 +4,7 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import {useNavigate} from "react-router-dom";
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 export default function BasicDemo() {
@@ -18,8 +19,14 @@ export default function BasicDemo() {
     ];
 
     return (
-        <div className="card">
-            <TabMenu model={items} />
-        </div>  
+        <Container>
+            <Row>
+                <Col>
+                    <div className="card">
+                        <TabMenu model={items} />
+                    </div>
+                </Col>
+            </Row>
+        </Container> 
     )
 }

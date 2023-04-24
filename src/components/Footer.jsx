@@ -1,12 +1,8 @@
 import React, {useState} from "react";
 import { RiFacebookCircleFill } from "react-icons/ri";
 import { TiSocialLinkedin } from "react-icons/ti";
-import { AiFillTwitterCircle } from 'react-icons/ai';
-import { RiTelegramFill } from 'react-icons/ri';
-import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineMail ,AiFillGithub} from 'react-icons/ai';
 import "../styles/footer.css"
-import { InputText } from 'primereact/inputtext';
-import { Button } from 'primereact/button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -51,11 +47,8 @@ export default function Footer() {
                 <div style={{ display: 'grid', justifyContent: 'center' }}>
 
                     <div className="text-center mt-5">
-
-
-
                         <div className="col item social">
-                            <a href="#"><RiTelegramFill/></a>
+                        <a href="https://github.com/khaoulakanboua"><AiFillGithub/></a>
                             <a href="https://www.linkedin.com/in/khaoula-kanboua-35a74a1a2/"><TiSocialLinkedin/></a>
                             <a href="https://mail.google.com/mail/u/0/#inbox"><AiOutlineMail /></a>
                         </div>
